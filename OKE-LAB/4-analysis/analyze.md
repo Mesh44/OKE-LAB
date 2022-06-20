@@ -34,7 +34,7 @@ Now that we have the HELM chart installed, we can check the logs in logging anal
 
 
 
-![](attachments/4157037494/4157037495.png)
+![Image alt text](images/34.jpg "Image title")
 
 
 You may now [proceed to the next lab](#next).

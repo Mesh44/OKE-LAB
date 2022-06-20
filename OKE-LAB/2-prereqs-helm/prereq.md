@@ -33,16 +33,15 @@ For logs to be sent to Logging Analytics the Logging Analyics Namespace is requi
 1.  From the main menu click on Observability & Manageability, on the right under Logging Analytics click on Administration
 
 
-![](attachments/4157037466/4157037467.png)  
+![Image alt text](images/20.jpg "Image title")
 
+2.  From the Administration Overview page on the left under Resources section, click on select **Service Details**
 
-1.  From the Administration Overview page on the left under Resources section, click on select **Service Details**
+![Image alt text](images/21.jpg "Image title")
 
-![](attachments/4157037466/4157037468.png)
+3.  Locate the Service Namespace. Copy the Service Namespace (in this case omcinternal) to a text file and save as you will need this later in the workshop
 
-1.  Locate the Service Namespace. Copy the Service Namespace (in this case omcinternal) to a text file and save as you will need this later in the workshop
-
-![](attachments/4157037466/4157037469.png)  
+![Image alt text](images/22.jpg "Image title")   
 \*\*\*\*Above Image needs cropping \*\*\*\*  
 
 
@@ -50,17 +49,17 @@ For logs to be sent to Logging Analytics the Logging Analyics Namespace is requi
 
 1.  From the Main Menu go to **Developers Service** and then click on **Kubernetes Cluster (OKE)** on the right.
 
-![](attachments/4157037466/4157037470.png)  
+![Image alt text](images/27.jpg "Image title")  
 
 
-1.  From the next screen under Name, locate your Cluster Name and click on it.
+2.  From the next screen under Name, locate your Cluster Name and click on it.
 
 
-![](attachments/4157037466/4157037471.png)  
+![Image alt text](images/29.jpg "Image title")
 
-1.  On the next screen locate the Cluster Name (in my case Ms-OKE-LA-LAB) and copy it to a text file. Also click **Copy** next to the Cluster ID and paste that value to a text file and save, as you will need these values later in the workshop.
+3.  On the next screen locate the Cluster Name (in my case Ms-OKE-LA-LAB) and copy it to a text file. Also click **Copy** next to the Cluster ID and paste that value to a text file and save, as you will need these values later in the workshop.
 
-![](attachments/4157037466/4157037472.png)  
+![Image alt text](images/31.jpg "Image title")
 
 
 
@@ -105,23 +104,23 @@ Why is the log group required?
 
 \*\*Need an image \*\*\*  
 
-1.  From the **Logging** **Analytics Administration Page**, under Resources click on **Log Groups**
+2.  From the **Logging** **Analytics Administration Page**, under Resources click on **Log Groups**
 
-![](attachments/4157037466/4157037473.png)
+![Image alt text](images/23.jpg "Image title")
 
-1.  Click **Create Log Group** on the Log Groups page, ensuring you are in the correct compartment. (My my case it's SCP). Enter a Name of the Log Group n(in this case OKE-LA-LAB) and optional Description. Then click **Create**.
+3.  Click **Create Log Group** on the Log Groups page, ensuring you are in the correct compartment. (My my case it's SCP). Enter a Name of the Log Group n(in this case OKE-LA-LAB) and optional Description. Then click **Create**.
 
-![](attachments/4157037466/4157037474.png)  
-
-
-1.  After the Log Group has been created click on it.
-
-![](attachments/4157037466/4157037475.png)  
+![Image alt text](images/24.jpg "Image title")
 
 
-1.  Locate the OCID for the group and click **Copy.** Paste and save the OCID to a test file as you will need it later.
+4.  After the Log Group has been created click on it.
 
-![](attachments/4157037466/4157037476.png)
+![Image alt text](images/25.jpg "Image title")
+
+
+5.  Locate the OCID for the group and click **Copy.** Paste and save the OCID to a test file as you will need it later.
+
+![Image alt text](images/26.jpg "Image title")
 You may now [proceed to the next lab](#next).
 
 
