@@ -1,5 +1,5 @@
 
-# LAB 3: Installing the OKE HELM Chart
+# LAB 3: Ingesting OKE Logs
 
 ## Introduction
 
@@ -43,9 +43,9 @@ In your browser
 ![Image alt text](images/11.jpg "Image title")
 
 
-## Task 2: Upload the OCI-Kubernetes-monitoring-main.zip to the Cloud shell
+## Task 2: Upload the OCI-Kubernetes-monitoring-main.zip to Cloud shell
 
-1.  Open the Cloud Shell by clicking the **\>\_** icon from the top right corner in the Oracle Cloud console.
+1.  Click **\>\_** icon from the top right corner in the Oracle Cloud console menu bar, to start a Cloud Shell environment which will appear at the bottom of your page.
 
 ![Image alt text](images/12.jpg "Image title")
 
@@ -57,7 +57,7 @@ In your browser
 
 ![Image alt text](images/14.jpg "Image title")
 
-4.  Click **select from your computer** link and select the Java agent installer file from your computer. This is the file that you downloaded in the earlier steps.
+4.  Click **select from your computer** link and pick the downloaded zip file. This is the file that you downloaded in the earlier steps.
 
 
 ![Image alt text](images/15.jpg "Image title")  

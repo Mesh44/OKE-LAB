@@ -99,7 +99,7 @@ For logs to be sent to Logging Analytics the *Logging Analyics Namespace* is req
 
 
 
-## Task 5. Obtain the Kubernetes Cluster name and Cluster ID
+## Task 5: Obtain the Kubernetes Cluster name and Cluster ID
 
 1.  From the Main Menu go to **Developers Service** and then click on **Kubernetes Cluster (OKE)** on the right.
 
