@@ -12,20 +12,20 @@
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Prepare Kubernetes input files",
-            "filename": "../../2-prepare-inputs/prep.md"
+            "title": "Lab 1:Verify the weblogic application",
+            "filename": "../../1-verify-weblogic-application/verify.md"
         },
         {
-            "title": "Lab 2: Enable Logs and Kubernetes Objects Collection",
+            "title": "Lab 2: Prerequisites for installing OKE HELM Charts",
+            "filename": "../../2-prereqs-helm/prereq.md"
+        },
+        {
+            "title": "Lab 3: Installing the OKE HELM Chart",
             "filename": "../../3-start-ingestion/ingest.md"
         },
         {
-            "title": "Lab 3: Search and Analyze Kubernetes Logs",
+            "title": "Lab 4: Analysing Logs in Logging Analytics",
             "filename": "../../4-analysis/analyze.md"
-        },
-        {
-            "title": "Lab 4: Create FluentD Container Image (Optional)",
-            "filename": "../../1-create-image/image.md"
         }
     ]
 }
