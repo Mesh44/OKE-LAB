@@ -31,12 +31,11 @@ Estimated time: ?
 
 In this task we will download the Helm charts and ??  
 
-1.  Go to [https://github.com/oracle-quickstart/oci-kubernetes-monitoring](https://github.com/oracle-quickstart/oci-kubernetes-monitoring)
+1.  From your browser go to [https://github.com/oracle-quickstart/oci-kubernetes-monitoring](https://github.com/oracle-quickstart/oci-kubernetes-monitoring)
 
-In your browser
 ```
 <copy>https://github.com/oracle-quickstart/oci-kubernetes-monitoring</copy>
- ```
+```
 
 2.  Press Code and download the Zip file to your local desktop
 
