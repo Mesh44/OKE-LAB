@@ -183,14 +183,14 @@ TEST SUITE: None
 ## Task 6: Check the helm chart has been installed successfully
 
 
-Now check the helm chart has been successfully installed. Copy and paste the following.  
+1. Now check the helm chart has been successfully installed. Copy and paste the following.  
 ```
 <copy>
 $ helm history okelab
 </copy>
 ```
 
-The output should be similar. Look for **Install complete** 
+The output should be similar. Look for **Install complete**
 ```
 mahesh\_k\_s@cloudshell:helm-chart(us-ashburn-1)$ helm history okelab  
 The output should be similar to:  
