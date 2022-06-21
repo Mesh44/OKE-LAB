@@ -23,48 +23,51 @@ Estimated time: 5 minutes
 
 1.  Click the navigation icon in the top left corner (three bars) in the Oracle Cloud console, and choose **Developer Services** > **Kubernetes Clusters (OKE)**.
 
-![](attachments/4157037443/4157037444.png)
+![Image alt text](images/01.jpg "Image title")
 
-1.  Locate the compartment you created the Kubernetes cluster when you performed the prerequisite [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop. Then click the name of the cluster.
+2.  Locate the compartment you created the Kubernetes cluster when you performed the prerequisite [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop. Then click the name of the cluster.
 
-![](attachments/4157037443/4157037445.png)
+![Image alt text](images/02.jpg "Image title")
 
-1.  On the Cluster Details page, click the **Access Cluster** button.
+3.  On the Cluster Details page, click the **Access Cluster** button.
 
-![](attachments/4157037443/4157037446.png)
+![Image alt text](images/03.jpg "Image title")
 
-1.  Select **Cloud Shell Access**, then click **Launch Cloud Shell**.
+4.  Select **Cloud Shell Access**, then click **Launch Cloud Shell**.
 
-![](attachments/4157037443/4157037447.png)
+![Image alt text](images/04.jpg "Image title")
 
-1.  Look at the bottom of the page, and you will see a Cloud Shell window and command prompt ready for input.
+5.  Look at the bottom of the page, and you will see a Cloud Shell window and command prompt ready for input.
 
-![](attachments/4157037443/4157037448.png)
+![Image alt text](images/05.jpg "Image title")
 
-1.  1.  In the **Access Your Cluster** page that is still opened at the upper side of console, locate the textbox with the OCI command, and click **Copy**.
+6.  In the **Access Your Cluster** page that is still opened at the upper side of console, locate the textbox with the OCI command, and click **Copy**.
 
-![](attachments/4157037443/4157037449.png)
+![Image alt text](images/06.jpg "Image title")
 
-1.  1.  Paste the command into the Cloud Shell and execute. It configures the Cloud Shell session to work with the cluster.
+7.  Paste the command into the Cloud Shell and execute. It configures the Cloud Shell session to work with the cluster.
 
-![](attachments/4157037443/4157037450.png)  
+![Image alt text](images/06.jpg "Image title")
 ***NOTE***: Save the command to a text file on your laptop, and execute it every time when you start a new Cloud Shell session, while working the labs in this workshop.
 
-1.  1.  In the Cloud Shell, run the following command.
+8.  In the Cloud Shell, run the following command.
+```
+<copy>kubectl get svc --all-namespace</copy>
+ ```
 
-*   kubectl get svc --all-namespaces
 
 The output will be similar to the image below. The namespace of the WebLogic Server services used in the WebLogic workshop is ***sa******mp******le-domain1-ns*** by default.  
-![](attachments/4157037443/4157037451.png)
+![Image alt text](images/08.jpg "Image title")
 
-1.  1.  Within the same command output, locate the LoadBalancer service. Note down the External-IP.
+9.  Within the same command output, locate the LoadBalancer service. Note down the External-IP.
 
-![](attachments/4157037443/4157037452.png)
+![Image alt text](images/09.jpg "Image title")
 
-1.  1.  On your computer, open a new browser tab and access the application with the following URL pattern:
-
-http://<External IP of the Load Balancer>/opdemo/?dsname=testDatasource  
+10. On your computer, open a new browser tab and access the application with the following URL pattern:
+```
+http://(External IP of the Load Balancer)/opdemo/?dsname=testDatasource
+```
 Make sure the WebLogic Operator Demo application launches as in the image below.  
-![](attachments/4157037443/4157037453.png)
+![Image alt text](images/10.jpg "Image title")
 
-1.  If you have not set up the application yet, or you cannot start the application, please visit the [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop, and complete the tutorials from the Task 1 to Task 4.
+11.  If you have not set up the application yet, or you cannot start the application, please visit the [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop, and complete the tutorials from the Task 1 to Task 4.

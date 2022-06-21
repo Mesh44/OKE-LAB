@@ -34,46 +34,53 @@ In this task we will download the Helm charts and ??
 1.  Go to [https://github.com/oracle-quickstart/oci-kubernetes-monitoring](https://github.com/oracle-quickstart/oci-kubernetes-monitoring)
 
 In your browser
+```
+<copy>https://github.com/oracle-quickstart/oci-kubernetes-monitoring</copy>
+ ```
 
-1.  Press Code and download the Zip file to your local desktop
+2.  Press Code and download the Zip file to your local desktop
 
-![](attachments/4157037481/4157037482.png)  
+![Image alt text](images/11.jpg "Image title")
+
 
 ## Task 2: Upload the OCI-Kubernetes-monitoring-main.zip to the Cloud shell
 
 1.  Open the Cloud Shell by clicking the **\>\_** icon from the top right corner in the Oracle Cloud console.
 
-![](attachments/4157037481/4157037483.png)
+![Image alt text](images/12.jpg "Image title")
 
-1.  From the Cloud Shell create a directory to store the downloaded file
+2.  From the Cloud Shell create a directory to store the downloaded file
+```
+<copy>mkdir ~/OKE-LAB</copy>  
+```
+3.  Click the navigation menu (three-bar icon) in the Cloud Shell title bar to open the menu. Then select **Upload**.
 
-mkdir ~/OKE-LAB  
+![Image alt text](images/14.jpg "Image title")
 
-1.  Click the navigation menu (three-bar icon) in the Cloud Shell title bar to open the menu. Then select **Upload**.
-
-![](attachments/4157037481/4157037484.png)
-
-1.  Click **select from your computer** link and select the Java agent installer file from your computer. This is the file that you downloaded in the earlier steps.
-
-
-![](attachments/4157037481/4157037485.png)  
+4.  Click **select from your computer** link and select the Java agent installer file from your computer. This is the file that you downloaded in the earlier steps.
 
 
-1.  Click **Upload**.
-
-![](attachments/4157037481/4157037486.png)  
+![Image alt text](images/15.jpg "Image title")  
 
 
-1.  Wait for the file transfer to complete.
+5.  Click **Upload**.
+
+![Image alt text](images/16.jpg "Image title")
 
 
-![](attachments/4157037481/4157037487.png)  
+6.  Wait for the file transfer to complete.
 
-1.  Verify the file has been transferred to your cloud shell area
+![Image alt text](images/17.jpg "Image title")
 
 
-ls oci-kubernetes-monitoring-main.zip  
-![](attachments/4157037481/4157037488.png)  
+7.  Verify the file has been transferred to your cloud shell area.
+
+```
+<copy>ls oci-kubernetes-monitoring-main.zip</copy>  
+```
+
+![Image alt text](images/19.jpg "Image title")
+
 
 ## Task 3: Unzip download
 
@@ -81,13 +88,17 @@ ls oci-kubernetes-monitoring-main.zip
 
 1.  Move the zip file to OKE-LABS and unzip
 
+```
+<copy>
+mv oci-kubernetes-monitoring-main.zip OKE-LAB/; cd OKE-LAB/; unzip oci-kubernetes-monitoring-main.zip</copy>
+```
 
-mv oci-kubernetes-monitoring-main.zip OKE-LAB/; cd OKE-LAB/; unzip oci-kubernetes-monitoring-main.zip
-
-1.  Once unzipped, move into the following directories, where you will see three directory folders
-
-cd oci-kubernetes-monitoring-main/logan/; ls  
-![](attachments/4157037481/4157037489.png)  
+2.  Once unzipped, move into the following directories, where you will see three directory folders
+```
+<copy>
+cd oci-kubernetes-monitoring-main/logan/; ls  </copy>
+```
+![Image alt text](images/30.jpg "Image title")
 
 
 
@@ -100,55 +111,65 @@ cd oci-kubernetes-monitoring-main/logan/; ls
 In this section we will configure the values.yaml file with the information we obtained in the prerequires section.  
 
 1.  Open Cloud shell
-2.  cd ~/OKE-LAB/oci-kubernetes-monitoring-main/logan/helm-chart
-3.  vi values.yaml
+More Images and explanation required. How to get to cloud shell.
 
+2.  Go to the location of the helm-chart.
+```
+<copy>
+cd ~/OKE-LAB/oci-kubernetes-monitoring-main/logan/helm-chart</copy>
+```
 
+3.  Edit values.yaml.  I will be using vi.  Firstly, find the location **url:**
+and add iad.ocir.io/ax1wgjs6b2vc/oci\_la\_fluentd:ol8-1.0
+```
+<copy>iad.ocir.io/ax1wgjs6b2vc/oci\_la\_fluentd:ol8-1.0</copy>
+```
+The full line should look like:
+```
+url: iad.ocir.io/ax1wgjs6b2vc/oci\_la\_fluentd:ol8-1.0
+```
 
-Within values.yaml locate the line :  
-url:  
-and add the location  
-url: iad.ocir.io/ax1wgjs6b2vc/oci\_la\_fluentd:ol8-1.0  
-url: iad.ocir.io/ax1wgjs6b2vc/oci\_la\_fluentd:0l8-1.0  
+4. Within values.yaml locate the following lines and replace them with the information copied in the prerequisites (LAB2) section – ensure that the format of the file is not changed.
 
-
-
-
-Within values.yaml locate the following lines and replace them with the information copied in the prerequisites (LAB2) section – ensure that the format of the file is not changed  
-
-
-1.  Logging Analytics Namespace  
-    ociLANamespace
-2.  Logging Analytics Default Log Group ID  
-    ociLALogGroupID
-3.  Kubernetes Cluster ID  
-    kubernetesClusterID
-4.  Kubernetes Cluster NAME  
-    kubernetesClusterName  
-
-
+```
+# Logging Analytics Namespace  
+ociLANamespace:
+# Logging Analytics Default Log Group ID  
+ociLALogGroupID:
+# Kubernetes Cluster ID  
+kubernetesClusterID:
+# Kubernetes Cluster NAME  
+kubernetesClusterName:  
+```
+Once you have located the values above and populated with the information from Lab 2, the file should look similar to:
     For example:  
+```
+# Logging Analytics Namespace  
+ociLANamespace: omcinternal
+# Logging Analytics Default Log Group ID  
+ociLALogGroupID: ocid1.loganalyticsloggroup.oc1.iad.amaaaa##############################2rgmyei4yr7wybq
+# Kubernetes Cluster ID  
+kubernetesClusterID: ocid1.cluster.oc1.iad.aaaa#########################################a4n2fzjgqa
+# Kubernetes Cluster NAME  
+kubernetesClusterName: MS-OKE-LA-LAB  
+```
 
-5.  Logging Analytics Namespace  
-    ociLANamespace: omcinternal
-6.  Logging Analytics Default Log Group ID  
-    ociLALogGroupID: ocid1.loganalyticsloggroup.oc1.iad.amaaaaaae5xv5jiauggucqgs2kalzfbjtnbwhiuemwabq2rgmyei4yr7wybq
-7.  Kubernetes Cluster ID  
-    kubernetesClusterID: ocid1.cluster.oc1.iad.aaaaaaaak65vzol4lbb64jtudvufvgpfsv4nwirawjmj4fe6sca4n2fzjgqa
-8.  Kubernetes Cluster NAME  
-    kubernetesClusterName: MS-OKE-LA-LAB  
-    Save the file.  
-    Here is an example of my values.yaml file  
-    ![](attachments/4157037481/4157037490.png)  
+Please save the file.  Here is an example of my values.yaml file  
+![Image alt text](images/33.jpg "Image title")
 
-    ## Task 5: Install the helm chart.
+## Task 5: Install the helm chart.
 
-    Now that you have populated the values.yaml file. It's time to install the helm chart.  
+Now that you have populated the values.yaml file. It's time to install the helm chart.  
 
-9.  Copy and paste the following, ensuring
+1.  Copy and paste the following, ensuring ** add some more information so as not to confuse **
+```
+<copy> helm install okelab -values ~/OKE LAB/oci-kubernetes-monitoring-main/logan/helm-chart/values.yaml ~/OKE-LAB/oci- Kubernetes- monitoring-main/logan/helm-chart</copy>
+```
 
-mahesh\_k\_s@cloudshell:helm-chart(us-ashburn-1)$ helm install okelab -values ~/OKE LAB/oci-kubernetes-monitoring-main/logan/helm-chart/values.yaml ~/OKE-LAB/oci- Kubernetes- monitoring-main/logan/helm-chart  
-The output should be like:  
+The output should be similar to:  
+```
+mahesh_k_s@cloudshell:helm-chart(us-ashburn-1)$ helm install okelab --values ~/OKE- LAB/oci-kubernetes-monitoring-main/logan/helm-chart/values.yaml ~/OKE-LAB/oci- Kubernetes- monitoring-main/logan/helm-chart
+
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/mahesh\_k\_s/.kube/config  
 WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /home/mahesh\_k\_s/.kube/config  
 NAME: okelab  
@@ -157,11 +178,20 @@ NAMESPACE: default
 STATUS: deployed  
 REVISION: 1  
 TEST SUITE: None  
+```
 
 ## Task 6: Check the helm chart has been installed successfully
 
 
-No check the helm chart has been successfully installed. Copy and paste the following.  
+Now check the helm chart has been successfully installed. Copy and paste the following.  
+```
+<copy>
+$ helm history okelab
+</copy>
+```
+
+The output should be similar. Look for **Install complete** 
+```
 mahesh\_k\_s@cloudshell:helm-chart(us-ashburn-1)$ helm history okelab  
 The output should be similar to:  
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location:  
@@ -170,6 +200,7 @@ WARNING: Kubernetes configuration file is group-readable. This is insecure. Loca
 /home/mahesh\_k\_s/.kube/config  
 REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION  
 1 Fri Jun 10 06:25:52 2022 deployed oci-la-fluentd-1.0.2 2.0.3 Install complete
+```
 
 You may now [proceed to the next lab](#next).
 
