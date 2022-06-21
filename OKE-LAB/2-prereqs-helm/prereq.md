@@ -42,7 +42,7 @@ Please view this [video](https://youtu.be/fm76C3R4kPM "link title")  and follow 
 3. Review the policies that are automatically created. A log group called Default is created if it does not exist. After Logging Analytics service is enabled successfully, click *Take me to Log Explorer*.
 
  ![Image alt text](images/37.jpg "Image title")
-
+test
 
 ## Task 2: Creating a Log Group.
 [Log Groups](https://docs.oracle.com/en-us/iaas/logging-analytics/doc/logging-analytics1.html#LOGAN-GUID-9B74BCD1-48BE-4A80-97E5-1C6CE9AA5EC2/) can be used to define who as access to the logs.
