@@ -4,12 +4,13 @@
 
 ## Introduction
 
-This workshop uses the **WebLogic Operator** Demo app- a simple JSP-based WebLogic application you created in the prerequisite [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop. Verify the WebLogic Operator application is running and ready.  
-Estimated time: 5 minutes
+This workshop uses the **WebLogic Operator** Demo app which is a simple JSP-based WebLogic application you created in the prerequisite [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop. In this Lab you will verify the WebLogic Operator application is running and ready.  
+
+#### Estimated time: 5 minutes
 
 #### Objectives
 
-*   Ensure the WebLogic Operator Demo application is running
+*   Ensure the WebLogic Operator Demo application is running.
 
 
 
