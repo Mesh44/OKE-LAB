@@ -15,7 +15,7 @@ Oracle Cloud Logging Analytics is a cloud solution in Oracle Cloud Infrastructur
 
 
 
-### Objectives
+## Objectives
 
 *   In this workshop, you will
     *   Download an OKE Helm chart
@@ -25,7 +25,7 @@ Oracle Cloud Logging Analytics is a cloud solution in Oracle Cloud Infrastructur
 
 
 
-### Prerequisites
+## Prerequisites
 
 *   An Oracle Free Tier with 30-day free trial or Paid Cloud Account
 *   Oracle Cloud Account Administrator role to Create Log Groups within compartments (need a docs link)
@@ -35,13 +35,13 @@ Oracle Cloud Logging Analytics is a cloud solution in Oracle Cloud Infrastructur
 
 You may now proceed to the [Getting Started lab](#next).
 
-### Learn More
+## Learn More
 
 * [Blog](https://blogs.oracle.com)
 * [Reference Architecture](ttps://docs.oracle.com/solutions/?q=&cType=reference-architectures&sort=date-desc&lang=en)
 * [Product Documentation](https://docs.oracle.com/en-us/iaas/logging-analytics/index.html)
 
-### Acknowledgements
+## Acknowledgements
 * **Author** - Ashwini R, Senior Member of Technical Staff
 * **Contributors** -  Kumar Varun, Product Manager
 * **Last Updated** - January 12, 2022
