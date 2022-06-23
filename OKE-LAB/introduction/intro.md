@@ -38,7 +38,7 @@ You may now proceed to the [Getting Started lab](#next).
 ## Learn More
 
 * [Blog](https://blogs.oracle.com)
-* [Reference Architecture](ttps://docs.oracle.com/solutions/?q=&cType=reference-architectures&sort=date-desc&lang=en)
+* [Reference Architecture](https://docs.oracle.com/solutions/?q=&cType=reference-architectures&sort=date-desc&lang=en)
 * [Product Documentation](https://docs.oracle.com/en-us/iaas/logging-analytics/index.html)
 
 ## Acknowledgements
