@@ -3,41 +3,33 @@
 
 ## Introduction
 
-*   Add details
+In this Lab you will download, configure and install a Helm chart to enable Kubernetes logs to be captured and sent to OCI Logging Analytics.
+Helm charts are simply a bunch of Kubernetes YAML manifests combined into a single package, which can be advertised to your Kubernetes clusters. Installing, upgrading and deleting Helm Charts into your cluster is as easy and really simplifies the deployment.
 
-Estimated time: ?  
+##### Estimated time: ?  
 
 ##### Objectives
 
-*   Download HELM
-*   Install HELM
-*   ?
-
+*   Download the OKE Helm Chart
+*   Configure the Chart
+*   Install the Chart into the OKE cluster
 
 
 
 ##### Prerequisites
 
-*   Ensure that Lab 2 – Prerequisites lab is completed
-*   Also ?
-
+*   Ensure that Lab2: Prerequisites for sending Logs has been completed.
 
 
 ## Task 1: Download HELM Chart.
 
-
-
-##### Introduction
-
-In this task we will download the Helm charts and ??  
-
-1.  From your browser go to [https://github.com/oracle-quickstart/oci-kubernetes-monitoring](https://github.com/oracle-quickstart/oci-kubernetes-monitoring)
+1.  To download the OKE Helm Chart copy [https://github.com/oracle-quickstart/oci-kubernetes-monitoring](https://github.com/oracle-quickstart/oci-kubernetes-monitoring) into your browser.
 
 ```
 <copy>https://github.com/oracle-quickstart/oci-kubernetes-monitoring</copy>
 ```
 
-2.  Press Code and download the Zip file to your local desktop
+2. Click on **Code** and then click on **Download Zip**. Download the file to your local desktop.
 
 ![Image alt text](images/11.jpg "Image title")
 
@@ -179,7 +171,7 @@ REVISION: 1
 TEST SUITE: None  
 ```
 
-## Task 6: Check the helm chart has been installed successfully
+## Task 6: Check the Helm Chart has been installed successfully
 
 
 1. Now check the helm chart has been successfully installed. Copy and paste the following.  
@@ -201,6 +193,18 @@ REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION
 1 Fri Jun 10 06:25:52 2022 deployed oci-la-fluentd-1.0.2 2.0.3 Install complete
 ```
 
+## Task 7: Uninstalling the Helm Chart.
+
+1. If you need to uninstall the Helm Chart. You can use the following
+```
+$ helm uninstall <release-name>
+```
+
+```
+<copy>
+$ helm uninstall <release-name>
+</copy>
+```
 You may now [proceed to the next lab](#next).
 
 
