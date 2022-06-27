@@ -190,7 +190,7 @@ $ helm history okelab
 </copy>
 ```
 
-The output should be similar. Look for **Install complete** 
+The output should be similar. Look for **Install complete**
 ```
 mahesh\_k\_s@cloudshell:helm-chart(us-ashburn-1)$ helm history okelab  
 The output should be similar to:  
@@ -202,6 +202,17 @@ REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION
 1 Fri Jun 10 06:25:52 2022 deployed oci-la-fluentd-1.0.2 2.0.3 Install complete
 ```
 
+## Task 7: Unintalling Helm Chart.
+If you need to uninstall the Helm Chart. Use the following.
+```
+$ helm uninstall <release-name>
+```
+
+```
+<copy>
+$ helm uninstall okelab
+</copy>
+```
 You may now [proceed to the next lab](#next).
 
 
