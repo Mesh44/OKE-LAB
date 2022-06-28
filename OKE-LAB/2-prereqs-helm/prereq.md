@@ -7,16 +7,16 @@
 
 In this lab, you will onboard Logging Analytics (if you have not already done so previously), create a compartment (if you have not done sp previously) to isolate your resources, create a Logging Analytics log Group to define who has access to the logs and then gather information which will be needed later to configure the OKE HELM chart to enable logs to be sent to Logging Analytics.   
 
-#### Estimated time: ?  
+#### Estimated time:
 
 #### Objectives
 
-*   On boarding Logging Analytics ¿ not DONE?
-*   Create a Compartment ¿ not DONE
+*   On boarding Logging Analytics
+*   Create a Compartment
 *   Create a Logging Analytics Log Group
 *   Obtain and record information which will later be required in the values.yaml file, to send logs to Logging Analytics, specifically
-    *   Logging Analytics Namespace
-    *   Kubernetes Cluster Name and Cluster ID
+    * Logging Analytics Namespace
+    * Kubernetes Cluster Name and Cluster ID
 
 
 
