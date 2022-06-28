@@ -202,7 +202,7 @@ $ helm uninstall <release-name>
 
 ```
 <copy>
-$ helm uninstall <release-name>
+$ helm uninstall okelab
 </copy>
 ```
 You may now [proceed to the next lab](#next).
