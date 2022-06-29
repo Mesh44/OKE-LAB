@@ -47,13 +47,23 @@ Please view this [video](https://youtu.be/fm76C3R4kPM "link title")  and follow 
 OCI [Compartments](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm#Working) are used for security isolation and access control. They accomplish that by providing a logical namespace where policies can be enforced, as folders in a file system.
 You can use an existing Compartment or create a new one as shown below.
 
-1.
+1. From the top level OCI console menu. Navigate to **Identity & Security** and click **Compartmets** under Identity.
 
+![Image alt text](images/43.jpg "Image title")
+
+2. From the Compartmets page, click **Create Compartment**
+
+![Image alt text](images/44.jpg "Image title")
+
+3. On Create Compartment page. Enter a name (SCP in this case), a Decription and select the Parent Compartment. Click on **Create Compartment** when complete.
+
+![Image alt text](images/45.jpg "Image title")
+Use this Compartment for all the remaining Labs.
 
 ## Task 3: Creating a Log Group.
 [Log Groups](https://docs.oracle.com/en-us/iaas/logging-analytics/doc/logging-analytics1.html#LOGAN-GUID-9B74BCD1-48BE-4A80-97E5-1C6CE9AA5EC2/) can be used to define who as access to the logs.
 
-1. From the top level OCI console menu. **Navigate to Observability & Management** and click **Administration** under Logging Analytics.
+1. From the top level OCI console menu. Navigate to **Observability & Management** and click **Administration** under Logging Analytics.
 
 ![Image alt text](images/38.jpg "Image title")
 
