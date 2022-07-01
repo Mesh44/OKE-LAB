@@ -48,13 +48,14 @@ This workshop uses the **WebLogic Operator** Demo app which is a simple JSP-base
 
 7.  Paste the command into the Cloud Shell and execute. It configures the Cloud Shell session to work with the cluster.
 
-![Image alt text](images/06.jpg "Image title")
+![Image alt text](images/07.jpg "Image title")
+
 ***NOTE***: Save the command to a text file on your laptop, and execute it every time when you start a new Cloud Shell session, while working the labs in this workshop.
 
 8.  In the Cloud Shell, run the following command.
-```
+````
 <copy>kubectl get svc --all-namespace</copy>
- ```
+ ````
 
 
 The output will be similar to the image below. The namespace of the WebLogic Server services used in the WebLogic workshop is ***sa******mp******le-domain1-ns*** by default.  
@@ -70,5 +71,6 @@ http://(External IP of the Load Balancer)/opdemo/?dsname=testDatasource
 ```
 Make sure the WebLogic Operator Demo application launches as in the image below.  
 ![Image alt text](images/10.jpg "Image title")
+Refresh the browser and the Hostname should change.
 
-11.  If you have not set up the application yet, or you cannot start the application, please visit the [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop, and complete the tutorials from the Task 1 to Task 4.
+11.  If you have not set up the application, or you cannot start the application, please visit the [**Migrating WebLogic Server to Kubernetes on OCI**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=567&p210_type=2&session=102696148940850) workshop, and complete the tutorials from Task 1 to Task 4.
