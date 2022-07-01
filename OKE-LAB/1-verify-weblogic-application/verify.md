@@ -56,7 +56,9 @@ This workshop uses the **WebLogic Operator** Demo app which is a simple JSP-base
 ````
 <copy>kubectl get svc --all-namespace</copy>
 ````
-
+````
+<copy>kubectl get svc --all-namespace</copy>
+````
 
 The output will be similar to the image below. The namespace of the WebLogic Server services used in the WebLogic workshop is ***sample-domain1-ns*** by default.  
 ![Image alt text](images/08.jpg "Image title")
