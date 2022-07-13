@@ -11,8 +11,8 @@ In this lab, you will onboard Logging Analytics (if you have not already done so
 
 #### Objectives
 
-*   On boarding Logging Analytics
-*   Create a Compartment
+*   On boarding Logging Analytics (optional)
+*   Create a Compartment (optional)
 *   Create a Logging Analytics Log Group
 *   Obtain and record information which will later be required in the values.yaml file, to send logs to Logging Analytics, specifically
     * Logging Analytics Namespace
